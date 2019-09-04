@@ -59,8 +59,15 @@ buttonText.textContent = siteContent.cta["button"];
 const CyrcleImg = document.getElementById("cta-img");
 CyrcleImg.setAttribute('src', siteContent.cta["img-src"])
 
+ headersH4 = document.querySelectorAll(".text-content h4");
+headersH4[0].textContent = siteContent["main-content"]["features-h4"];
+headersH4[1].textContent = siteContent["main-content"]["about-h4"];
 
-//const imgQuery = document.getElementById("middle-img");
-//imgQuery.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+const Paraghraphs =  document.querySelectorAll(".text-content p");
+Paraghraphs[0].textContent = siteContent["main-content"]["features-content"];
+Paraghraphs[1].textContent = siteContent["main-content"]["about-content"];
+
+const imgQuery = document.getElementById("middle-img");
+imgQuery.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 
