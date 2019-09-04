@@ -50,6 +50,26 @@ navigations [3].textContent = siteContent.nav["nav-item-4"];
 navigations [4].textContent = siteContent.nav["nav-item-5"];
 navigations [5].textContent = siteContent.nav["nav-item-6"];
 
+navigations.forEach((greenColor) => {
+  return greenColor.style.color = 'green'});
+
+const text1 = document.createElement("a");
+const placeToAdd = document.querySelector("nav")
+text1.textContent = "Mission";
+text1.href = "#";
+text1.style.color = 'red';
+placeToAdd.prepend(text1);
+//console.log(text1);//
+
+const text2 = document.createElement("a");
+const placeToAdd2 = document.querySelector("nav");
+text2.textContent = "Job Oppotunities"
+text2.href = "#";
+text2.style.color = 'red';
+placeToAdd2.appendChild(text2);
+//console.log(text2);//
+
+
 const h1Text = document.querySelector("h1");
 h1Text.textContent = siteContent.cta["h1"];
 
