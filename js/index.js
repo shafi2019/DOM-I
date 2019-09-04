@@ -50,8 +50,8 @@ navigations [3].textContent = siteContent.nav["nav-item-4"];
 navigations [4].textContent = siteContent.nav["nav-item-5"];
 navigations [5].textContent = siteContent.nav["nav-item-6"];
 
-navigations.forEach((greenColor) => {
-  return greenColor.style.color = 'green'});
+navigations.forEach(greenColor => greenColor.style.color = 'green');
+
 
 const text1 = document.createElement("a");
 const placeToAdd = document.querySelector("nav")
