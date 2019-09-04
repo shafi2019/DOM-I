@@ -50,8 +50,17 @@ navigations [3].textContent = siteContent.nav["nav-item-4"];
 navigations [4].textContent = siteContent.nav["nav-item-5"];
 navigations [5].textContent = siteContent.nav["nav-item-6"];
 
-let CyrcleImg = document.getElementById("cta-img");
+const h1Text = document.querySelector("h1");
+h1Text.textContent = siteContent.cta["h1"];
+
+const buttonText = document.querySelector("button");
+buttonText.textContent = siteContent.cta["button"];
+
+const CyrcleImg = document.getElementById("cta-img");
 CyrcleImg.setAttribute('src', siteContent.cta["img-src"])
 
+
+//const imgQuery = document.getElementById("middle-img");
+//imgQuery.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 
