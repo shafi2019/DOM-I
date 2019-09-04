@@ -59,15 +59,23 @@ buttonText.textContent = siteContent.cta["button"];
 const CyrcleImg = document.getElementById("cta-img");
 CyrcleImg.setAttribute('src', siteContent.cta["img-src"])
 
- headersH4 = document.querySelectorAll(".text-content h4");
+const headersH4 = document.querySelectorAll(".text-content h4");
 headersH4[0].textContent = siteContent["main-content"]["features-h4"];
 headersH4[1].textContent = siteContent["main-content"]["about-h4"];
 
-const Paraghraphs =  document.querySelectorAll(".text-content p");
-Paraghraphs[0].textContent = siteContent["main-content"]["features-content"];
-Paraghraphs[1].textContent = siteContent["main-content"]["about-content"];
+const Paragraphs =  document.querySelectorAll(".text-content p");
+Paragraphs[0].textContent = siteContent["main-content"]["features-content"];
+Paragraphs[1].textContent = siteContent["main-content"]["about-content"];
 
 const imgQuery = document.getElementById("middle-img");
 imgQuery.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+// Useing again HeadersH4  // 
+headersH4[2].textContent = siteContent["main-content"]["services-h4"];
+headersH4[3].textContent = siteContent["main-content"]["product-h4"];
+headersH4[4].textContent = siteContent["main-content"]["vision-h4"];
 
+// Useing again Paragraphs //
+Paragraphs[2].textContent = siteContent["main-content"]["services-content"];
+Paragraphs[3].textContent = siteContent["main-content"]["product-content"];
+Paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
