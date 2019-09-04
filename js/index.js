@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 
-const navigations = document.querySelectorAll("a");
+const navigations = document.querySelectorAll("header nav a");
 navigations [0].textContent = siteContent.nav["nav-item-1"];
 navigations [1].textContent = siteContent.nav["nav-item-2"];
 navigations [2].textContent = siteContent.nav["nav-item-3"];
@@ -79,3 +79,12 @@ headersH4[4].textContent = siteContent["main-content"]["vision-h4"];
 Paragraphs[2].textContent = siteContent["main-content"]["services-content"];
 Paragraphs[3].textContent = siteContent["main-content"]["product-content"];
 Paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
+
+//Contact//
+const contactSectionH4 = document.querySelector(".contact h4")
+contactSectionH4.textContent = siteContent.contact["contact-h4"];
+
+const contactSectionParagraphs = document.querySelectorAll(".contact p")
+contactSectionParagraphs[0].textContent = siteContent.contact.address;
+contactSectionParagraphs[1].textContent = siteContent.contact.phone;
+contactSectionParagraphs[2].textContent = siteContent.contact.email;
